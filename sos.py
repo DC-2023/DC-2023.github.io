@@ -6,6 +6,7 @@ from dash import html
 from dash.dependencies import Input, Output, State
 import plotly.express as px
 import pandas as pd
+#from jsonsempai import magic
 import truck
 import uzel
 import time
@@ -21,7 +22,7 @@ tips = px.data.tips()
 
 fig = px.scatter(tips, x="total_bill", y="tip") # Create a scatterplot
 
-title = html.H1("Hello WORLD!!! Как Дела?")
+title = html.H1("!!!Привет Вован!!!")
 
 # Поиск кода ошибки в базе
 def poisk(marka_, uzel_, code_, fmi_):
@@ -49,6 +50,8 @@ def poisk(marka_, uzel_, code_, fmi_):
     
 # Извлечение марок авто
 def marka():
+    #with open ('truck.json') as f:
+        #tr = f.load()
     tr = truck.truck
     marka = []
     for t in tr:
@@ -59,6 +62,8 @@ def marka():
 # Извлечение модели относительно марки
 auto = []
 def model(car):
+    #with open ('truck.json') as f:
+        #tr = f.load()
     tr = truck.truck
     md = []
     for t in tr:
@@ -72,6 +77,8 @@ def model(car):
 
 # Извлечение объема относительно модели
 def automob(au):
+    #with open ('truck.json') as f:
+        #tr = f.load()
     tr = truck.truck
     obiem = []
     for t in tr:
@@ -85,6 +92,8 @@ def automob(au):
 
 # Извлечение узла относительно модели
 def modul(mod):
+    #with open ('uzel.json') as f:
+        #md = f.load()
     md = uzel.uzel
     m = []
     for uz in md:
