@@ -6,11 +6,11 @@ from setuptools import setup, find_packages
 
 # Note: keep requirements here to ease distributions packaging
 tests_require = [
-    'pytest',
-    'pytest-httpbin>=0.0.6',
-    'pytest-lazy-fixture>=0.0.6',
+    #'pytest',
+    #'pytest-httpbin>=0.0.6',
+    #'pytest-lazy-fixture>=0.0.6',
     'responses',
-    'pytest-mock',
+    #'pytest-mock',
     'werkzeug<2.1.0'
 ]
 dev_require = [
@@ -22,7 +22,7 @@ dev_require = [
     #'flake8-mutable',
     #'flake8-tuple',
     'pyopenssl',
-    'pytest-cov',
+    #'pytest-cov',
     'pyyaml',
     'twine',
     'wheel',
