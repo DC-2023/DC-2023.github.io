@@ -83,16 +83,7 @@ setup(
     author = SOScar.__author__,
     author_email = SOScar.__author_email__,
     #license = SOScar.__licence__,
-    #packages = find_packages(include=['httpie', 'httpie.*']),
-'''
-    entry_points={
-        'console_scripts': [
-            'http = httpie.__main__:main',
-            'https = httpie.__main__:main',
-            'httpie = httpie.manager.__main__:main',
-        ],
-    },
-'''    
+    #packages = find_packages(include=['httpie', 'httpie.*']),   
     python_requires = '>=3.7',
     extras_require = extras_require,
     install_requires = install_requires,
