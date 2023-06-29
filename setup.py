@@ -87,34 +87,4 @@ setup(
     python_requires = '>=3.7',
     extras_require = extras_require,
     install_requires = install_requires,
-'''    
-    classifiers=[
-        'Development Status :: 5 - Production/Stable',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 3 :: Only',
-        'Environment :: Console',
-        'Intended Audience :: Developers',
-        'Intended Audience :: System Administrators',
-        'License :: OSI Approved :: BSD License',
-        'Topic :: Internet :: WWW/HTTP',
-        'Topic :: Software Development',
-        'Topic :: System :: Networking',
-        'Topic :: Terminals',
-        'Topic :: Text Processing',
-        'Topic :: Utilities'
-    ],
-   
-    project_urls={
-        'GitHub': 'https://github.com/httpie/httpie',
-        #'Twitter': 'https://twitter.com/httpie',
-        #'Discord': 'https://httpie.io/discord',
-        #'Documentation': 'https://httpie.io/docs',
-        #'Online Demo': 'https://httpie.io/run',
-    },
-    data_files=[
-        ('share/man/man1', ['extras/man/http.1']),
-        ('share/man/man1', ['extras/man/https.1']),
-        ('share/man/man1', ['extras/man/httpie.1']),
-    ]
-'''    
 )
