@@ -76,7 +76,7 @@ setup(
     name = 'SOScar',
     version = SOScar.__version__,
     #description = SOScar.__doc__.strip(),
-    long_description = long_description(),
+    #long_description = long_description(),
     long_description_content_type = 'text/markdown',
     url = 'https://DC-2023.github.io/',
     #download_url=f'https://github.com/httpie/httpie/archive/{httpie.__version__}.tar.gz',
