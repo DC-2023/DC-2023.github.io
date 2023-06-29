@@ -4,9 +4,6 @@ import sys
 
 from setuptools import setup, find_packages
 
-#import httpie
-
-
 # Note: keep requirements here to ease distributions packaging
 tests_require = [
     'pytest',
@@ -19,7 +16,7 @@ tests_require = [
 dev_require = [
     *tests_require,
     'dash',
-    #'flake8',
+    'flake8',
     #'flake8-comprehensions',
     #'flake8-deprecated',
     #'flake8-mutable',
@@ -74,14 +71,14 @@ def long_description():
 
 setup(
     name = 'SOScar',
-    version = SOScar.__version__,
+    version = '1.0.0',
     #description = SOScar.__doc__.strip(),
     #long_description = long_description(),
     long_description_content_type = 'text/markdown',
     url = 'https://DC-2023.github.io/',
     #download_url=f'https://github.com/httpie/httpie/archive/{httpie.__version__}.tar.gz',
-    author = SOScar.__author__,
-    author_email = SOScar.__author_email__,
+    author = 'DenCom',
+    author_email = 'd_c_2023@list.ru',
     #license = SOScar.__licence__,
     #packages = find_packages(include=['httpie', 'httpie.*']),   
     python_requires = '>=3.7',
