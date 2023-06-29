@@ -86,5 +86,4 @@ setup(
     #packages = find_packages(include=['httpie', 'httpie.*']),   
     python_requires = '>=3.7',
     extras_require = extras_require,
-    install_requires = install_requires,
-)
+    install_requires = install_requires)
