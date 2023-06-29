@@ -1,2 +1,2 @@
-dash
-json
+dash>=2.10.2
+

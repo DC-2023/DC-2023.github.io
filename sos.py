@@ -6,13 +6,13 @@ from dash import html
 from dash.dependencies import Input, Output, State
 import plotly.express as px
 import pandas as pd
-#from jsonsempai import magic
 import truck
 import uzel
 import time
 import os
 import json
 import re
+
 
 # Create the app
 app = dash.Dash(__name__)
