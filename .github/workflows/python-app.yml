@@ -10,8 +10,8 @@ on:
     branches: [ "main" ]
   page_build:
 
-permissions:
-  contents: read
+permissions: read-all
+  #contents: read
 
 jobs:
   build:
