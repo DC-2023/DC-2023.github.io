@@ -37,6 +37,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Display the path
       run: |
-        import os
-        print(os.listdir['PATH'])
+        #import os
+        #print(os.listdir['PATH'])
+        print('HELLO WORLD')
         shell: python
