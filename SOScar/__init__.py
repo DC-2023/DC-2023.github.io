@@ -6,7 +6,7 @@ __title__ = 'SOScar'
 __author__ = 'DenCom'
 __author_email__ = 'd_c_2023@list.ru'
 
-from .SOScar import truck, uzel
+from SOScar import truck, uzel
 
 '''
 from .__version__ import __version__

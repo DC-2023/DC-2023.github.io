@@ -6,8 +6,8 @@ from dash import html
 from dash.dependencies import Input, Output, State
 import plotly.express as px
 import pandas as pd
-import truck
-import uzel
+from SOScar import truck
+from SOScar import uzel
 import time
 import os
 import json
