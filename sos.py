@@ -17,6 +17,8 @@ import re
 # Create the app
 app = dash.Dash(__name__)
 
+server = app.server
+
 # Load dataset using Plotly
 tips = px.data.tips()
 
@@ -212,3 +214,4 @@ app.layout = html.Div(children=[title, text_div, col, buttom, load, out])
 
 if __name__ == '__main__':
    app.run_server(debug=True) # Run the Dash app
+   
