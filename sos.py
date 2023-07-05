@@ -24,7 +24,7 @@ tips = px.data.tips()
 
 fig = px.scatter(tips, x="total_bill", y="tip") # Create a scatterplot
 
-title = html.H1("!!!Привет, Вован!!!")
+title = html.H1("!!!Привет!!! Для теста работает только DAF")
 
 # Поиск кода ошибки в базе
 def poisk(marka_, uzel_, code_, fmi_):
