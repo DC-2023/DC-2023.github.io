@@ -1,9 +1,5 @@
-# This is purely the result of trial and error.
-
-import sys
-
 from setuptools import setup, find_packages
-
+'''
 # Note: keep requirements here to ease distributions packaging
 tests_require = [
     #'pytest',
@@ -13,8 +9,9 @@ tests_require = [
     #'pytest-mock',
     'werkzeug<2.1.0'
 ]
+'''
 dev_require = [
-    *tests_require,
+    #*tests_require,
     'dash',
     'flake8',
     'flake8-comprehensions',
@@ -29,8 +26,8 @@ dev_require = [
     'Jinja2'
 ]
 install_requires = [
+    'pip',
     'dash >= 2.10.2',
-    #'pip',
     'charset_normalizer>=2.0.0',
     'defusedxml>=0.6.0',
     'requests[socks]>=2.22.0',
@@ -38,27 +35,13 @@ install_requires = [
     'requests-toolbelt>=0.9.1',
     'multidict>=4.7.0',
     'setuptools',
-    #'importlib-metadata>=1.4.0; python_version < "3.8"',
     'rich>=9.10.0'
 ]
-install_requires_win_only = [
-    'colorama>=0.2.4',
-]
-
-# Conditional dependencies:
-
-# sdist
-if 'bdist_wheel' not in sys.argv:
-
-    if 'win32' in str(sys.platform).lower():
-        # Terminal colors for Windows
-        install_requires.extend(install_requires_win_only)
-
 
 # bdist_wheel
 extras_require = {
     'dev': dev_require,
-    'test': tests_require,
+    #'test': tests_require,
     # https://wheel.readthedocs.io/en/latest/#defining-conditional-dependencies
     #':sys_platform == "win32"': install_requires_win_only,
 }
@@ -83,5 +66,4 @@ setup(
     python_requires = '>=3.10',
     extras_require = extras_require,
     install_requires = install_requires,
-    #entry_points = {'console_scripts': ["SOScar = sos.__main__:main"]}
 )
