@@ -44,7 +44,7 @@ install_requires = [
 install_requires_win_only = [
     'colorama>=0.2.4',
 ]
-'''
+
 # Conditional dependencies:
 
 # sdist
@@ -53,7 +53,7 @@ if 'bdist_wheel' not in sys.argv:
     if 'win32' in str(sys.platform).lower():
         # Terminal colors for Windows
         install_requires.extend(install_requires_win_only)
-'''
+
 
 # bdist_wheel
 extras_require = {
@@ -73,14 +73,14 @@ setup(
     name = 'SOScar',
     version = '1.0.0',
     #description = SOScar.__doc__.strip(),
-    long_description = long_description(),
+    #long_description = long_description(),
     long_description_content_type = 'text/markdown',
     url = 'https://DC-2023.github.io/',
     author = 'DenCom',
     author_email = 'd_c_2023@list.ru',
-    license = 'MIT',
+    license = 'Apache 2.0',
     #packages = find_packages(include=['httpie', 'httpie.*']),   
-    python_requires = '>=3.7',
+    python_requires = '>=3.10',
     extras_require = extras_require,
     install_requires = install_requires,
     #entry_points = {'console_scripts': ["SOScar = sos.__main__:main"]}
