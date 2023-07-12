@@ -58,7 +58,7 @@ setup(
     description = 'SOScars',
     long_description = long_description(),
     long_description_content_type = 'text/markdown',
-    url = 'https://github.com/DC-2023/DC-2023.github.io',
+    url = 'https://DC-2023.github.io',
     author = 'DenCom',
     author_email = '',
     license = 'Apache 2.0',
