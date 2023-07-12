@@ -9,6 +9,7 @@ on:
   pull_request:
     branches: [ "main" ]
   page_build:
+    branches: [ "main" ]
 
 permissions: read-all
   #contents: read
