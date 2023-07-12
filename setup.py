@@ -62,7 +62,7 @@ setup(
     author = 'DenCom',
     author_email = '',
     license = 'Apache 2.0',
-    #packages = find_packages(include=['uzel', 'truck']),   
+    packages = find_packages(include=['uzel', 'truck']),   
     python_requires = '>=3.10',
     extras_require = extras_require,
     install_requires = install_requires,
