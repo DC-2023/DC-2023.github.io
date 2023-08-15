@@ -1,0 +1,33 @@
+h1 {
+    color: green;
+}
+
+h6 {
+    color: indigo;
+    padding: 10;
+    background: lightblue;
+    font: sans-serif;
+    size: 14;
+    font-weight: bold;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 2rem 1rem;
+    overflow-y: scroll;
+    background-color: #222222;
+}
+
+.content {
+    padding: 2rem 1rem;
+    right: 0;
+}
+
+.label {
+    background: black;
+    color: yellow;
+}
+
